@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-grayish-blue: #8486a9;
+  --clr-soft-red: #fb6087;
+  --clr-white: #ffffff;
+  --clr-dark-desaturated-blue: #343650;
+  --clr-very-dark-blue: #1e1f29;
+  --clr-cery-dark-black: #000000;
+  --clr-cery-dark-blue: #191a24;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: var(--clr-white);
+  background-color: var(--clr-cery-dark-black);
+}
+
+.clock-cointainer {
+  width: 80vw;
+  height: 100vh;
+  background-color: var(--clr-very-dark-blue);
+  /* background-image: url(./images/bg-stars.svg); */
+  background: var(--clr-very-dark-blue) url(./images/pattern-hills.svg)
+    no-repeat fixed bottom;
+  background-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7rem;
+}
+
+#dayBox,
+#hoursBox,
+#minutesBox,
+#secondsBox {
+  border: 1px solid var(--clr-dark-desaturated-blue);
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 1.4rem;
+  background-color: var(--clr-dark-desaturated-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: var(--clr-soft-red);
+  font-size: 4.2rem;
+}
+
+.day,
+.hours,
+.minutes,
+.seconds {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  color: var(--clr-grayish-blue);
+  font-size: 0.9rem;
+}
+
+.icon {
+  margin-top: 5rem;
+}
+
+.icon img {
+  margin: 1rem;
+}
+
+#msg {
+  margin-top: 5rem;
+  font-size: 2rem;
+  word-spacing: 1.5rem;
+  color: var(--clr-soft-red);
+}
