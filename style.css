@@ -37,18 +37,12 @@ body {
   align-items: center;
 }
 
-.title {
-  margin-top: 5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.5rem;
-}
-
 .clock {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 1.5rem;
   margin-top: 7rem;
 }
 
@@ -57,16 +51,15 @@ body {
 #minutesBox,
 #secondsBox {
   border: 1px solid var(--clr-dark-desaturated-blue);
-  width: 7.5rem;
-  height: 7.5rem;
-  margin: 1.4rem;
+  width: 4rem;
+  height: 4rem;
   background-color: var(--clr-dark-desaturated-blue);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
   color: var(--clr-soft-red);
-  font-size: 4.2rem;
+  font-size: 2rem;
 }
 
 .day,
@@ -74,9 +67,8 @@ body {
 .minutes,
 .seconds {
   text-align: center;
-  letter-spacing: 0.3rem;
   color: var(--clr-grayish-blue);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .icon {
@@ -91,13 +83,21 @@ body {
 }
 
 .icon img {
-  margin: 1rem;
-  width: 35px;
+  margin: 1.5rem;
+  width: 30px;
   height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
 }
 
 .icon img:hover {
@@ -111,30 +111,31 @@ body {
   color: var(--clr-soft-red);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 850px) {
   #dayBox,
   #hoursBox,
   #minutesBox,
   #secondsBox {
     border: 1px solid var(--clr-dark-desaturated-blue);
-    width: 4rem;
-    height: 4rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: 1.4rem;
     background-color: var(--clr-dark-desaturated-blue);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
     color: var(--clr-soft-red);
-    font-size: 2rem;
+    font-size: 4.2rem;
   }
-
   .day,
   .hours,
   .minutes,
   .seconds {
     text-align: center;
+    letter-spacing: 0.3rem;
     color: var(--clr-grayish-blue);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .icon {
@@ -144,21 +145,21 @@ body {
     background: var(--clr-very-dark-blue) url(./images/pattern-hills.svg)
       no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
   }
-
   .icon img {
-    margin: 2rem;
-    width: 30px;
+    margin: 1rem;
+    width: 35px;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
   }
-
   .title {
     margin-top: 5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
   }
