@@ -27,7 +27,7 @@ body {
 }
 
 .clock-container {
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   background-color: var(--clr-very-dark-blue);
   background-image: url(./images/bg-stars.svg);
@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 7rem;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .icon img {
-  margin: 1.5rem;
+  margin: 1rem;
   width: 30px;
   height: 25px;
   display: flex;
@@ -97,53 +97,72 @@ body {
   margin-top: 5rem;
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  word-spacing: 0.5rem;
 }
 
 .icon img:hover {
   transform: translateY(-20px);
 }
 
-#msg {
-  margin-top: 5rem;
-  font-size: 2rem;
-  word-spacing: 1.5rem;
-  color: var(--clr-soft-red);
+.msg {
+  color: #fb6087;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 481px) {
+  .clock {
+    gap: 2.5rem;
+  }
+
   #dayBox,
   #hoursBox,
   #minutesBox,
   #secondsBox {
-    border: 1px solid var(--clr-dark-desaturated-blue);
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  .day,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+  }
+  .msg {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #dayBox,
+  #hoursBox,
+  #minutesBox,
+  #secondsBox {
     width: 7.5rem;
     height: 7.5rem;
     margin: 1.4rem;
-    background-color: var(--clr-dark-desaturated-blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    color: var(--clr-soft-red);
     font-size: 4.2rem;
   }
   .day,
   .hours,
   .minutes,
   .seconds {
-    text-align: center;
     letter-spacing: 0.3rem;
-    color: var(--clr-grayish-blue);
     font-size: 0.9rem;
   }
 
   .icon {
     width: 100%;
     height: 100%;
-    margin-top: 5rem;
-    background: var(--clr-very-dark-blue) url(./images/pattern-hills.svg)
-      no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -159,8 +178,12 @@ body {
   }
   .title {
     margin-top: 5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
+  }
+  .msg {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }
